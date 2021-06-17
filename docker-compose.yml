@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+    angular-service:
+      container_name: angularcontainer 
+      build: ./
+      volumes:
+        - './:/usr/src/app'
+      ports: 
+        - '80:80'
+      command: > 
+        npm run start:docker
