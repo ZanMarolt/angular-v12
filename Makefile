@@ -10,3 +10,6 @@ run: ## Run dev environment: start the docker image and run logs
 
 stop: ## Stop dev environment
 	docker-compose -f docker-compose.yml down
+
+filecount: ## Show file counts
+	./filecount.sh

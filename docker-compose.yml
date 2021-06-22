@@ -7,5 +7,4 @@ services:
         - './:/usr/src/app'
       ports: 
         - '80:80'
-      command: > 
-        npm run start:docker
+      command: sh -c "./filecount.sh && npm run start:docker"
